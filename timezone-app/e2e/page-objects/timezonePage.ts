@@ -8,10 +8,10 @@ class TimezonePage {
   }
 
   public async addTimezone(timezoneName: string, timezoneLabel: string) {
-    await this.page.click('button:has-text("Add timezone")');
-    await this.page.fill('input[placeholder="Label"]', timezoneLabel);
+    await this.page.getByTestId('add-timezone').click();
+    await this.page.getByTestId('timezone-label').fill(timezoneLabel);
     await this.page.locator('#timezone').selectOption(timezoneName);
-    await this.page.click('button:has-text("Save")');
+    await this.page.getByTestId('submit-timezone').click();
   }
 
   public async clickDeleteButton(timezoneName: string) {

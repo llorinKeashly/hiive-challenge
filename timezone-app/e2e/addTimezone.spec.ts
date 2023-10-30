@@ -35,6 +35,8 @@ test.describe('adding timezones', () => {
 
     const timeValues = await timezonePage.getTimeValues();
     const sortedTimeValues = [...timeValues].sort();
+    console.log(timeValues);
+    console.log(sortedTimeValues);
     await expect(timeValues).toEqual(sortedTimeValues);
   });
 });
