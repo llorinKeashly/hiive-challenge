@@ -1,6 +1,6 @@
 # hiive-challenge
 
-Use `npx playwright test --ui` to run the tests. You shouldn't need to start the server, the tests should do that automatically. There is a bug around sorting the added timezones so there is one failing test case until the bug is fixed. I added `data-playwright-test-label` to components to make selectors more robust and less prone to flakyness.
+Use `npx playwright test --ui` to run the tests. You shouldn't need to start the server, the tests should do that automatically. There is a bug around sorting the added timezones so there is one failing test case until the bug is fixed. I added `data-testid` to components to make selectors more robust and less prone to flakyness.
 
 The below bugs were found with only running the timezone-app as per the instructions.
 
