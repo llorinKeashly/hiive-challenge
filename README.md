@@ -12,7 +12,7 @@ The below bugs were found with only running the timezone-app as per the instruct
 **Reproduction Steps:** Start the timezone-app server, go to localhost, see the error banner <br>
 **Current Results:** 3 errors banner at the bottom of the page is shown <br>
 **Expected Results:** no errors should be showing up <br>
-**Screenshots:** <img width="867" alt="Screenshot 2023-10-30 at 10 25 02 AM" src="https://github.com/llorinKeashly/hiive-challenge/assets/13005582/529e8b19-7ffb-4d47-83b4-2252bc437142"> <br>
+**Screenshots:** <br><img width="867" alt="Screenshot 2023-10-30 at 10 25 02 AM" src="https://github.com/llorinKeashly/hiive-challenge/assets/13005582/529e8b19-7ffb-4d47-83b4-2252bc437142"> <br>
 
 **Title:** There was an error while hydrating. Because the error happened outside of a Suspense boundary, the entire root will switch to client rendering. runtime error on page load <br>
 **Environment:** localhost <br>
